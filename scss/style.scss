@@ -1,0 +1,97 @@
+@charset "utf-8";
+// Variables
+$section-spacing: 4rem 0;
+$color-main: #f29364;
+$text-color-main: #333;
+
+
+body {
+    color: $text-color-main;
+    font-family: "Avenir Next", "Helvetica neue", "Verdana";
+}
+
+header,
+section,
+footer {
+    padding: $section-spacing;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+a {
+    color: $text-color-main;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+}
+
+
+// Navigation
+nav {
+    text-align: right;
+    a {
+        text-transform: uppercase;
+        & + a {
+            margin-left: 2rem;
+        }
+    }
+}
+
+
+// Intro
+#intro {
+    h1 {
+        font-size: 3rem;
+        line-height: normal;
+        i {
+            color: #ffc580;
+            transform: rotate(20deg);
+        }
+        strong {
+            font-size: 4rem;
+        }
+    }
+
+    ul {
+        padding: $section-spacing;
+        li {
+            a {
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color-main;
+                border-radius: 50%;
+                i {
+                    color: #fff;
+                    font-size: 1.5rem;
+                }
+            }
+            & + li {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+    .toDown {
+        height: 80px;
+        text-align: center;
+        position: relative;
+        a {
+            width: 30px;
+            height: 30px;
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+            position: absolute;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            animation: sdb 2s infinite;
+            -webkit-animation: sdb 2s infinite;
+        }
+    }
+}
