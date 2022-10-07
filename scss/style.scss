@@ -12,8 +12,7 @@ body {
 }
 
 header,
-section,
-footer {
+section {
     padding: $section-spacing;
 }
 
@@ -78,6 +77,37 @@ a {
     }
 }
 
+.sns {
+    &_item {
+        a {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $color-main;
+            border-radius: 50%;
+            i {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }
+        & + .sns_item {
+            margin-left: 1.5rem;
+        }
+        &.outline {
+            a {
+                background: #fff;
+                border: 2px solid $color-main;
+                i {
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
+
 
 // Navigation
 nav {
@@ -104,28 +134,8 @@ nav {
             font-size: 4rem;
         }
     }
-
-    ul {
+    .sns {
         padding: $section-spacing;
-        li {
-            a {
-                width: 50px;
-                height: 50px;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: $color-main;
-                border-radius: 50%;
-                i {
-                    color: #fff;
-                    font-size: 1.5rem;
-                }
-            }
-            & + li {
-                margin-left: 1.5rem;
-            }
-        }
     }
     .toDown {
         height: 80px;
@@ -206,4 +216,20 @@ nav {
             margin-top: 4rem;
         }
     }
+}
+
+
+// contact
+#contact {
+    text-align: center;
+    background: $color-base;
+    p {
+        line-height: 1.7;
+    }
+}
+
+
+// Footer
+footer {
+    padding: 2rem;
 }
