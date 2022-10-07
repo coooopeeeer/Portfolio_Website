@@ -2,6 +2,7 @@
 // Variables
 $section-spacing: 4rem 0;
 $color-main: #f29364;
+$color-base: #f0f0f0;
 $text-color-main: #333;
 
 
@@ -20,12 +21,60 @@ h1 {
     font-weight: normal;
 }
 
+h2 {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+        padding: 0 1rem;
+        background: linear-gradient(transparent 60%, $color-main 60%);
+    }
+}
+
+h3 {
+    color: $color-main;
+    font-size: 2rem;
+}
+
+h4 {
+    margin: 2rem 0 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
 a {
     color: $text-color-main;
     text-decoration: none;
     &:hover {
         opacity: 0.7;
         transition: 0.5s;
+    }
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    &.btn-primary {
+        background: $color-main;
+        border-color: $color-main;
+        &:hover {
+            background: $color-main;
+            border-color: $color-main;
+        }
+    }
+    &.btn-secondary {
+        color: $color-main;
+        background: #fff;
+        border-color: $color-main;
+        &:hover {
+            color: $color-main;
+            background: #fff;
+            border-color: $color-main;
+        }
     }
 }
 
@@ -88,10 +137,73 @@ nav {
             border-left: 1px solid #333;
             border-bottom: 1px solid #333;
             position: absolute;
-            transform: rotate(-45deg);
             -webkit-transform: rotate(-45deg);
-            animation: sdb 2s infinite;
+            transform: rotate(-45deg);
             -webkit-animation: sdb 2s infinite;
+            animation: sdb 2s infinite;
+        }
+    }
+    @-webkit-keyframes sdb {
+        0% {
+            -webkit-transform: rotate(-45deg) translate(0, 0);
+        }
+        20% {
+            -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+        }
+        40% {
+            -webkit-transform: rotate(-45deg) translate(0, 0);
+        }
+    }
+    @keyframes sdb {
+        0% {
+            transform: rotate(-45deg) translate(0, 0);
+        }
+        20% {
+            transform: rotate(-45deg) translate(-10px, 10px);
+        }
+        40% {
+            transform: rotate(-45deg) translate(0, 0);
+        }
+    }
+}
+
+
+// About Me
+#about {
+    background: $color-base;
+    border: 20px solid $color-main;
+    .circle {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background: #d8d8d8;
+        border-radius: 50%;
+        & + .circle {
+            margin-left: 0.125rem;
+        }
+        &.filled {
+            background: #666;
+        }
+    }
+}
+
+
+// Works
+#works {
+    .works_item {
+        p {
+            margin: 1.75rem 0;
+            line-height: 1.7;
+            strong {
+                margin-top: 0.25rem;
+                display: block;
+            }
+        }
+        .btn + .btn {
+            margin-left: 0.75rem;
+        }
+        & + .works_item {
+            margin-top: 4rem;
         }
     }
 }
