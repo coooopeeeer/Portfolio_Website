@@ -17,7 +17,20 @@ section {
 }
 
 h1 {
+    font-size: 3rem;
     font-weight: normal;
+}
+
+.sub {
+    h1 {
+        color: $color-main;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 3rem;
+        text-align: left;
+        text-transform: none;
+    }
 }
 
 h2 {
@@ -124,7 +137,6 @@ nav {
 // Intro
 #intro {
     h1 {
-        font-size: 3rem;
         line-height: normal;
         i {
             color: #ffc580;
@@ -232,4 +244,34 @@ nav {
 // Footer
 footer {
     padding: 2rem;
+}
+
+
+// Sub
+.work_detail-item {
+    & + .work_detail-item {
+        margin-top: 4rem;
+    }
+    &_design + .work_detail-item_design {
+        margin-top: 4rem;
+    }
+}
+
+#workOther {
+    ul {
+        li {
+            color: #fff;
+            font-size: 3rem;
+            opacity: .8;
+            position: absolute;
+            top: 40%;
+            cursor: pointer;
+            &#next {
+                right: 0;
+            }
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
 }
