@@ -31,6 +31,11 @@ h1 {
         text-align: left;
         text-transform: none;
     }
+    h4 {
+        margin: 0 0 0.5rem;
+        letter-spacing: normal;
+        text-transform: none;
+    }
 }
 
 h2 {
@@ -248,12 +253,23 @@ footer {
 
 
 // Sub
+#workIntro .container,
+#workDetail .container,
+#workOther .container {
+    max-width: 960px;
+}
+
 .work_detail-item {
     & + .work_detail-item {
         margin-top: 4rem;
     }
-    &_design + .work_detail-item_design {
-        margin-top: 4rem;
+    &_design {
+        i {
+            color: #ffc580;
+        }
+        & + .work_detail-item_design {
+            margin-top: 4rem;
+        }
     }
 }
 
