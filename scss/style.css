@@ -1,0 +1,281 @@
+body {
+  color: #333;
+  font-family: "Avenir Next", "Helvetica neue", "Verdana";
+}
+
+header,
+section {
+  padding: 4rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.sub h1 {
+  color: #f29364;
+  font-weight: bold;
+}
+
+.sub h2 {
+  font-size: 3rem;
+  text-align: left;
+  text-transform: none;
+}
+
+.sub h4 {
+  margin: 0 0 0.5rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+h2 {
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 span {
+  padding: 0 1rem;
+  background: linear-gradient(transparent 60%, #f29364 60%);
+}
+
+h3 {
+  color: #f29364;
+  font-size: 2rem;
+}
+
+h4 {
+  margin: 2rem 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+}
+
+.btn.btn-primary {
+  background: #f29364;
+  border-color: #f29364;
+}
+
+.btn.btn-primary:hover {
+  background: #f29364;
+  border-color: #f29364;
+}
+
+.btn.btn-secondary {
+  color: #f29364;
+  background: #fff;
+  border-color: #f29364;
+}
+
+.btn.btn-secondary:hover {
+  color: #f29364;
+  background: #fff;
+  border-color: #f29364;
+}
+
+.sns_item a {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f29364;
+  border-radius: 50%;
+}
+
+.sns_item a i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.sns_item + .sns_item {
+  margin-left: 1.5rem;
+}
+
+.sns_item.outline a {
+  background: #fff;
+  border: 2px solid #f29364;
+}
+
+.sns_item.outline a i {
+  color: #f29364;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+nav a + a {
+  margin-left: 2rem;
+}
+
+#intro h1 {
+  line-height: normal;
+}
+
+#intro h1 i {
+  color: #ffc580;
+  transform: rotate(20deg);
+}
+
+#intro h1 strong {
+  font-size: 4rem;
+}
+
+#intro .sns {
+  padding: 4rem 0;
+}
+
+#intro .toDown {
+  height: 80px;
+  text-align: center;
+  position: relative;
+}
+
+#intro .toDown a {
+  width: 30px;
+  height: 30px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+}
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+#about {
+  background: #f0f0f0;
+  border: 20px solid #f29364;
+}
+
+#about .circle {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: #d8d8d8;
+  border-radius: 50%;
+}
+
+#about .circle + .circle {
+  margin-left: 0.125rem;
+}
+
+#about .circle.filled {
+  background: #666;
+}
+
+#works .works_item p {
+  margin: 1.75rem 0;
+  line-height: 1.7;
+}
+
+#works .works_item p strong {
+  margin-top: 0.25rem;
+  display: block;
+}
+
+#works .works_item .btn + .btn {
+  margin-left: 0.75rem;
+}
+
+#works .works_item + .works_item {
+  margin-top: 4rem;
+}
+
+#contact {
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#contact p {
+  line-height: 1.7;
+}
+
+footer {
+  padding: 2rem;
+}
+
+#workIntro .container,
+#workDetail .container,
+#workOther .container {
+  max-width: 960px;
+}
+
+.work_detail-item + .work_detail-item {
+  margin-top: 4rem;
+}
+
+.work_detail-item_design i {
+  color: #ffc580;
+}
+
+.work_detail-item_design + .work_detail-item_design {
+  margin-top: 4rem;
+}
+
+#workOther ul li {
+  color: #fff;
+  font-size: 3rem;
+  opacity: .8;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+}
+
+#workOther ul li#next {
+  right: 0;
+}
+
+#workOther ul li:hover {
+  opacity: .7;
+}
