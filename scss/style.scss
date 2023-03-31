@@ -264,8 +264,11 @@ footer {
         margin-top: 4rem;
     }
     &_design {
-        i {
+        .fa-hand-point-up {
             color: #ffc580;
+        }
+        .fa-fire {
+            color: #ed412e;
         }
         & + .work_detail-item_design {
             margin-top: 4rem;
