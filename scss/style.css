@@ -261,6 +261,10 @@ footer {
   max-width: 960px;
 }
 
+#workDetail a {
+  text-decoration: underline;
+}
+
 .work_detail-item + .work_detail-item {
   margin-top: 4rem;
 }
