@@ -267,6 +267,10 @@ footer {
   margin-top: 4rem;
 }
 
+.work_detail-item.ui img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 #workOther ul li {
   color: #fff;
   font-size: 3rem;
