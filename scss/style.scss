@@ -95,6 +95,15 @@ a {
     }
 }
 
+.color-indication {
+    width: 18px;
+    height: 12px;
+    border-radius: 2px;
+    &.navy {
+        background: #282d3f;
+    }
+}
+
 .sns {
     &_item {
         a {
