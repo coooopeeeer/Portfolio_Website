@@ -2,13 +2,14 @@
 // Variables
 $section-spacing: 4rem 0;
 $color-main: #f29364;
-$color-base: #f0f0f0;
+$color-base: #f5f2ed;
 $text-color-main: #333;
 
 
 body {
     color: $text-color-main;
     font-family: "Avenir Next", "Helvetica neue", "Verdana";
+    background: #ebe6df;
 }
 
 header,
@@ -67,8 +68,8 @@ a {
     color: $text-color-main;
     text-decoration: none;
     &:hover {
-        opacity: 0.7;
-        transition: 0.5s;
+        color: $text-color-main;
+        border-bottom: 1px solid;
     }
 }
 
@@ -140,7 +141,6 @@ a {
 nav {
     text-align: right;
     a {
-        text-transform: uppercase;
         & + a {
             margin-left: 2rem;
         }

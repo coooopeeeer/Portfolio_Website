@@ -1,6 +1,7 @@
 body {
   color: #333;
   font-family: "Avenir Next", "Helvetica neue", "Verdana";
+  background: #ebe6df;
 }
 
 header,
@@ -62,8 +63,8 @@ a {
 }
 
 a:hover {
-  opacity: 0.7;
-  transition: 0.5s;
+  color: #333;
+  border-bottom: 1px solid;
 }
 
 .btn {
@@ -136,10 +137,6 @@ nav {
   text-align: right;
 }
 
-nav a {
-  text-transform: uppercase;
-}
-
 nav a + a {
   margin-left: 2rem;
 }
@@ -204,7 +201,7 @@ nav a + a {
 }
 
 #about {
-  background: #f0f0f0;
+  background: #f5f2ed;
   border: 20px solid #f29364;
 }
 
@@ -244,7 +241,7 @@ nav a + a {
 
 #contact {
   text-align: center;
-  background: #f0f0f0;
+  background: #f5f2ed;
 }
 
 #contact p {
