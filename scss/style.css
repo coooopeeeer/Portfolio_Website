@@ -1,6 +1,6 @@
 body {
   color: #333;
-  font-family: "Avenir Next", "Helvetica neue", "Verdana";
+  font-family: "Montserrat", sans-serif;
   background: #ebe6df;
 }
 
@@ -10,7 +10,7 @@ section {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: normal;
 }
 
@@ -32,16 +32,10 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 4rem;
-  font-size: 5rem;
-  font-weight: normal;
-  text-align: center;
+  margin-bottom: 1rem;
+  color: #f29364;
+  font-weight: bold;
   text-transform: uppercase;
-}
-
-h2 span {
-  padding: 0 1rem;
-  background: linear-gradient(transparent 60%, #f29364 60%);
 }
 
 h3 {
@@ -55,6 +49,10 @@ h4 {
   font-weight: bold;
   letter-spacing: .125rem;
   text-transform: uppercase;
+}
+
+p {
+  line-height: 1.7;
 }
 
 a {
@@ -147,7 +145,7 @@ nav a + a {
 }
 
 #intro h1 {
-  line-height: normal;
+  line-height: 1.5;
 }
 
 #intro h1 i {
@@ -169,7 +167,6 @@ nav a + a {
 
 #about {
   background: #f5f2ed;
-  border: 20px solid #f29364;
 }
 
 #about .circle {
@@ -188,9 +185,12 @@ nav a + a {
   background: #666;
 }
 
+#about img {
+  border-radius: 2rem;
+}
+
 #works .works_item p {
   margin: 1.75rem 0;
-  line-height: 1.7;
 }
 
 #works .works_item p strong {
