@@ -38,13 +38,8 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
-  color: #f29364;
-  font-size: 2rem;
-}
-
 h4 {
-  margin: 2rem 0 1rem;
+  padding-top: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: .125rem;
@@ -91,6 +86,14 @@ a:hover {
   color: #f29364;
   background: #fff;
   border-color: #f29364;
+}
+
+.icol i {
+  margin-right: .5rem;
+}
+
+.icor i {
+  margin-left: .5rem;
 }
 
 .color-indication {

@@ -47,13 +47,8 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
-    color: $color-main;
-    font-size: 2rem;
-}
-
 h4 {
-    margin: 2rem 0 1rem;
+    padding-top: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .125rem;
@@ -94,6 +89,18 @@ a {
             background: #fff;
             border-color: $color-main;
         }
+    }
+}
+
+.icol {
+    i {
+        margin-right: .5rem;
+    }
+}
+
+.icor {
+    i {
+        margin-left: .5rem;
     }
 }
 
