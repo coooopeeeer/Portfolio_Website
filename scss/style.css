@@ -163,7 +163,7 @@ nav a + a {
   padding: 2rem 0;
 }
 
-#intro .toDown {
+#intro .toDown a {
   font-size: 3rem;
 }
 

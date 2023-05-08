@@ -169,7 +169,9 @@ nav {
         padding: $block-spacing;
     }
     .toDown {
-        font-size: 3rem;
+        a {
+            font-size: 3rem;
+        }
     }
 }
 
