@@ -78,13 +78,13 @@ a:hover {
 
 .btn.btn-secondary {
   color: #f29364;
-  background: #fff;
+  background: transparent;
   border-color: #f29364;
 }
 
 .btn.btn-secondary:hover {
   color: #f29364;
-  background: #fff;
+  background: transparent;
   border-color: #f29364;
 }
 

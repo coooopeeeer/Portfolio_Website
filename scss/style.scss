@@ -82,11 +82,11 @@ a {
     }
     &.btn-secondary {
         color: $color-main;
-        background: #fff;
+        background: transparent;
         border-color: $color-main;
         &:hover {
             color: $color-main;
-            background: #fff;
+            background: transparent;
             border-color: $color-main;
         }
     }
