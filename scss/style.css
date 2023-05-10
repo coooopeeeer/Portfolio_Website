@@ -14,14 +14,8 @@ h1 {
   font-weight: normal;
 }
 
-.sub h1 {
-  color: #f29364;
-  font-weight: bold;
-}
-
 .sub h2 {
   font-size: 3rem;
-  text-align: left;
   text-transform: none;
 }
 
@@ -222,10 +216,8 @@ footer {
   padding: 2rem;
 }
 
-#workIntro .container,
-#workDetail .container,
-#workOther .container {
-  max-width: 960px;
+#workIntro .btn + .btn {
+  margin-left: 0.75rem;
 }
 
 #workDetail a {

@@ -24,13 +24,8 @@ h1 {
 }
 
 .sub {
-    h1 {
-        color: $color-main;
-        font-weight: bold;
-    }
     h2 {
         font-size: 3rem;
-        text-align: left;
         text-transform: none;
     }
     h4 {
@@ -241,10 +236,10 @@ footer {
 
 
 // Sub
-#workIntro .container,
-#workDetail .container,
-#workOther .container {
-    max-width: 960px;
+#workIntro {
+    .btn + .btn {
+        margin-left: 0.75rem;
+    }
 }
 
 #workDetail {
