@@ -28,8 +28,11 @@ h1 {
         font-size: 3rem;
         text-transform: none;
     }
+    h3 {
+        font-size: 2.5rem;
+    }
     h4 {
-        margin: 0 0 0.5rem;
+        font-size: 2rem;
         letter-spacing: normal;
         text-transform: none;
     }
@@ -252,14 +255,14 @@ footer {
     & + .work_detail-item {
         margin-top: 4rem;
     }
-    &_design {
+    &_row {
         .fa-hand-point-up {
             color: #ffc580;
         }
         .fa-fire {
             color: #ed412e;
         }
-        & + .work_detail-item_design {
+        & + .work_detail-item_row {
             margin-top: 4rem;
         }
     }
