@@ -24,7 +24,7 @@ h1 {
 }
 
 .sub h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: normal;
   text-transform: none;
 }
@@ -229,7 +229,7 @@ footer {
 }
 
 .work_detail-item + .work_detail-item {
-  margin-top: 4rem;
+  margin-top: 10rem;
 }
 
 .work_detail-item_row .fa-hand-point-up {
